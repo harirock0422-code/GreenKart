@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head><title>Buy Now</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+.sealine{
+background-color:green;
+  border:1px hwb(0 100% 0%) solid ;
+height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+  .back{
+  background-color:lab(0% 0 0 / 0);
+    width: 5px;
+    color:lab(0% 0 0);
+height: 60px;
+  line-height: 60px;
+  border:none;
+    font-size:30px;
+    font-weight:bold;
+    margin-left:-8px;
+  }
+.carousel-indicators .active{
+background-color: green;
+  }
+  .buy{
+    width:350px;
+    height: 85px;
+    background-color:hwb(0 100% 0%) ;
+    border: 1px black dashed;
+    border-radius:10px ;
+    margin-top: 10px;
+    }
+  .buy1{
+    width:350px;
+    height: 130px;
+    background-color:hwb(0 100% 0%) ;
+    border: 1px black dashed;
+    border-radius:10px ;
+    margin-top: 10px;
+  }
+  .vegetablesoffers{
+display: flex;
+overflow-x: auto;
+gap: 20px;
+padding:6px;
+  }
+  .box1{
+width: 400px;
+height: 255px;
+border: 1px black solid;
+border-radius: 10px;
+text-align: center;
+padding: 10px;
+}
+.box1 h3{
+font-size: 20px;
+}
+.box1 p{
+  color:green;
+  margin-top: -10px;
+}
+.box1 p::after{
+  content: "/1kg";
+  color:black;
+}
+.box1 button{
+width:100px;
+height: 40px;
+background-color: green;
+color: white;
+border-radius:10px;
+margin-top:-10px ;
+}
+.box1 img{
+  margin-top: -10px;
+}
+  .vegetablesoffers img{
+width:155px;
+height:155px;
+  }
+  .buy h4{
+      font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -60px;
+    background-color: yellow;
+    width: 80px;
+    border-radius: 10px;
+    border:1px solid black ;
+    }
+  .buy h4::after{
+    content:"50";
+    font-size: 15px;
+    margin-left: 4px;
+    text-decoration: line-through;
+    color: hwb(0 2% 98% / 0.5490196078431373);
+    }
+  .buy p{
+    color: green;
+    background-color:hwb(120 90% 5%);
+    width: 80px;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: -38px;
+    font-size: 17px;
+    border:1px black solid ;
+    }
+  .buyboxall{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    }
+  #buybox1:hover{
+  background-color:hwb(125 87% 4% / 0.7725490196078432);
+ }
+  #buybox2:hover{
+  background-color:hwb(125 87% 4% / 0.7725490196078432);
+ }
+  #buybox1{
+    width:110px;
+    height:80px;
+    border:1px hwb(116 0% 48%) solid;
+    border-radius:10px;
+    font-size: 19px;
+    font-weight:bold;
+    line-height: 80px;
+    background-color: white;
+    }
+    #buybox2{
+    width:110px;
+    height:80px;
+    border:1px hwb(116 0% 48%) solid;
+    border-radius:10px;
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 80px;
+    background-color:white;
+    }
+</style>
+</head>
+<body>
+<div class="sealine">
+<button class="back" onclick="goBack()">←</button>
+  <script>
+  function goBack(){
+  history.back();
+  }
+  </script>
+<input type="search" place placeholder="Search" style="width:255px; height:38px; border-radius:12px; border: 1px black solid; margin-left:5px;"><i class="bi bi-cart3" style="font-size: 24px; margin-left: -15px; color:lab(0% 0 0);"></i></div>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 7px; height:7px;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="width: 7px; height:7px;"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="width: 7px; height:7px;"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" style="width: 7px; height:7px;"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="beetroot1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="beetroot2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="beetroot3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="beetroot.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <center>
+  <div class="buy"><h2 style="margin-top: 7px; font-size: 25px;">Beetroot</h2><h4 id="rate">₹60</h4><p>25% OFF</p></div>
+    <div class="buy1"><h5 style="margin-left: -200px; margin-top: 5px; font-weight: bold;">Select Quantity:</h5><div class="buyboxall">
+    <button id="buybox1" onclick="changerate()">500g/₹30</button>
+    <button id="buybox2" onclick="changerate1()">1Kg/₹60</button></div></div>
+    </center>
+  <hr>
+  <h2 style="color:lab(0% 0 0); text-align:left; margin-left:10px; font-size:20px; margin-top:15px; text-decoration:underline hwb(0 0% 0%);">Similar Products:</h2>
+<div class="vegetablesoffers">
+<div class="box1"><a href="Buynow1.html"><img src="onion.jpg"></a><h3>Onion</h3><p>₹50</p><a href="Buynow1.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynow2.html"><img src="potato.jpg"></a><h3>Potato</h3><p>₹25</p><a href="Buynow2.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynow.html"><img src="tomato.jpg"></a><h3>Tomato</h3><p>₹40</p><a href="Buynow.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynow3.html"><img src="greenchilli.jpg"></a><h3>Green Chilli</h3><p>₹30</p><a href="Buynow3.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynow6.html"><img src="cabbage.jpg"></a><h3>Cabbage</h3><p>₹32</p><a href="Buynow6.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynow5.html"><img src="redchilli.jpg"></a><h3>Red Chilli</h3><p>₹45</p><a href="Buynow5.html"><button>Add to Cart</button></a></div>
+</div>
+  <script>
+    function changerate(){
+      document.getElementById("rate").innerHTML
+      ="₹30";
+      }
+    function changerate1(){
+    document.getElementById("rate").innerHTML="₹60";
+   }
+  </script>
+</body>
+</html>
