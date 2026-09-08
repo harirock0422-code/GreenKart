@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head><title>Buy Now</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+.sealine{
+background-color:green;
+  border:1px hwb(0 100% 0%) solid ;
+height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+  .back{
+  background-color:lab(0% 0 0 / 0);
+    width: 5px;
+    color:lab(0% 0 0);
+height: 60px;
+  line-height: 60px;
+  border:none;
+    font-size:30px;
+    font-weight:bold;
+    margin-left:-8px;
+  }
+.carousel-indicators .active{
+background-color: green;
+  }
+  .buy{
+    width:350px;
+    height: 85px;
+    background-color:hwb(0 100% 0%) ;
+    border: 1px black dashed;
+    border-radius:10px ;
+    margin-top: 10px;
+    }
+  .buy1{
+    width:350px;
+    height: 130px;
+    background-color:hwb(0 100% 0%) ;
+    border: 1px black dashed;
+    border-radius:10px ;
+    margin-top: 10px;
+  }
+  .vegetablesoffers{
+display: flex;
+overflow-x: auto;
+gap: 20px;
+padding:6px;
+  }
+  .box1{
+width: 400px;
+height: 255px;
+border: 1px black solid;
+border-radius: 10px;
+text-align: center;
+padding: 10px;
+}
+.box1 h3{
+font-size: 20px;
+}
+.box1 p{
+  color:green;
+  margin-top: -10px;
+}
+.box1 p::after{
+  content: "/100g";
+  color:black;
+}
+.box1 button{
+width:100px;
+height: 40px;
+background-color: green;
+color: white;
+border-radius:10px;
+margin-top:-10px ;
+}
+.box1 img{
+  margin-top: -10px;
+}
+  .vegetablesoffers img{
+width:155px;
+height:155px;
+  }
+  .buy h4{
+      font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -60px;
+    background-color: yellow;
+    width: 80px;
+    border-radius: 10px;
+    border:1px solid black ;
+    }
+  .buy h4::after{
+    content:"50";
+    font-size: 15px;
+    margin-left: 4px;
+    text-decoration: line-through;
+    color: hwb(0 2% 98% / 0.5490196078431373);
+    }
+  .buy p{
+    color: green;
+    background-color:hwb(120 90% 5%);
+    width: 80px;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: -38px;
+    font-size: 17px;
+    border:1px black solid ;
+    }
+  .buyboxall{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    }
+  #buybox1:hover{
+  background-color:hwb(125 87% 4% / 0.7725490196078432);
+ }
+  #buybox2:hover{
+  background-color:hwb(125 87% 4% / 0.7725490196078432);
+ }
+  #buybox1{
+    width:110px;
+    height:80px;
+    border:1px hwb(116 0% 48%) solid;
+    border-radius:10px;
+    font-size: 19px;
+    font-weight:bold;
+    line-height: 80px;
+    background-color: white;
+    }
+    #buybox2{
+    width:110px;
+    height:80px;
+    border:1px hwb(116 0% 48%) solid;
+    border-radius:10px;
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 80px;
+    background-color:white;
+    }
+</style>
+</head>
+<body>
+<div class="sealine">
+<button class="back" onclick="goBack()">←</button>
+  <script>
+  function goBack(){
+  history.back();
+  }
+  </script>
+<input type="search" place placeholder="Search" style="width:255px; height:38px; border-radius:12px; border: 1px black solid; margin-left:5px;"><i class="bi bi-cart3" style="font-size: 24px; margin-left: -15px; color:lab(0% 0 0);"></i></div>
+<img src="spinach.jpg" style="width:100%">
+  <center>
+  <div class="buy"><h2 style="margin-top: 7px; font-size: 25px;">Spinach</h2><h4 id="rate">₹20</h4><p>50% OFF</p></div>
+    <div class="buy1"><h5 style="margin-left: -200px; margin-top: 5px; font-weight: bold;">Select Quantity:</h5><div class="buyboxall">
+    <button id="buybox1" onclick="changerate()">50g/₹20</button>
+    <button id="buybox2" onclick="changerate1()">100g/₹40</button></div></div>
+    </center>
+  <hr>
+  <h2 style="color:lab(0% 0 0); text-align:left; margin-left:10px; font-size:20px; margin-top:15px; text-decoration:underline hwb(0 0% 0%);">Similar Products:</h2>
+<div class="vegetablesoffers">
+<div class="box1"><a href="Buynowhf7.html"><img src="garlic.jpg"></a><h3>Garlic</h3><p>₹55</p><a href="Buynowhf7.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynowhf1.html"><img src="curryleaves.jpg"></a><h3>Curry Leaves</h3><p>₹40</p><a href="Buynowhf1.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynowhf2.html"><img src="basil.jpg"></a><h3>Basil</h3><p>₹50</p><a href="Buynowhf2.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynowhf3.html"><img src="mintleaves.jpg"></a><h3>Mint Leaves</h3><p>₹50</p><a href="Buynowhf3.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynowhf4.html"><img src="lemon.jpg"></a><h3>Lemons</h3><p>₹20</p><a href="Buynowhf4.html"><button>Add to Cart</button></a></div>
+<div class="box1"><a href="Buynowhf5.html"><img src="springonion.jpg"></a><h3>Spring Onions</h3><p>₹20</p><a href="Buynowhf5.html"><button>Add to Cart</button></a></div>
+</div>
+  <script>
+    function changerate(){
+      document.getElementById("rate").innerHTML
+      ="₹20";
+      }
+    function changerate1(){
+    document.getElementById("rate").innerHTML="₹40";
+   }
+  </script>
+</body>
+</html>
