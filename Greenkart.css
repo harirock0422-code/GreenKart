@@ -1,0 +1,106 @@
+body{
+background-color:white;
+}
+.border{
+color:red;
+background-color:green;
+margin-top:-10px;
+width:100%;
+height:30px;
+}
+.container-fluid{
+  border:1px black solid;
+  margin-top: -10px;
+}
+.image{
+width: 80px;
+}
+.container-fluid ul li a{
+  font-family:Times New Roman;
+}
+.container-fluid ul a:hover{
+color: green;
+}
+.farmfresh{
+color: green;
+}
+.imgcarousel{
+  margin-top:-8px;
+}
+.vegetablesoffers img{
+width:155px;
+height:155px;
+}
+.vegetablesoffers{
+display: flex;
+overflow-x: auto;
+gap: 20px;
+padding:6px;
+}
+.box1{
+width: 400px;
+height: 255px;
+border: 1px black solid;
+border-radius: 10px;
+text-align: center;
+padding: 10px;
+}
+.box1 h3{
+font-size: 20px;
+}
+.box1 p{
+  color:green;
+  margin-top: -10px;
+}
+.box1 p::after{
+  content: "/1kg";
+  color:black;
+}
+.box1 button{
+width:100px;
+height: 40px;
+background-color: green;
+color: white;
+border-radius:10px;
+margin-top:-10px ;
+}
+.box1 img{
+  margin-top: -10px;
+}
+.footer{
+  background-color: green;
+  width: 100%;
+  height: 200px;
+}
+.footer ul li{
+color: white;
+font-size: 18px;
+}
+.footer p{
+  color:white;
+text-align: center;
+margin-top:20px;
+}
+.map{
+  margin-left: 140px;
+  position:relative;
+  top: 20px;
+}
+.footer ul{
+  margin-top:-40px;
+}
+.allitems{
+background-color:white;
+  height:130px;
+line-height:120px;
+border: 1px black solid;
+  border-radius: 10px;
+display: flex;
+justify-content: space-around;
+  margin-top: 10px;
+}
+.allitems p{
+margin-top: -56px;
+  display: flex;
+justify-content: space-around;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Greenkart login</title>
+<style>
+.login{
+background-color:green;
+  width:320px;
+  height: 450px;
+  border-radius:30px ;
+  margin-top: 115px;
+  box-shadow:1px 1px 10px 5px black ;
+}
+  .login img{
+  width: 55px;
+  height: 55px;
+  }
+.login #line{
+display: flex;
+  justify-content:left;
+  align-items: center;
+  background-color: white;
+  height: 55px;
+ width: 320px;
+  gap: 40px;
+  }
+</style>
+</head>
+<body>
+<center>
+<form name="form1" id="f1" action="url" method="post">
+<div class="login">
+  <br><br>
+<div id="line">
+<img src="greenkart.png">
+<h2>LOGIN KART</h2>
+</div>
+  <br>
+  <h3 style="margin-left:-150px; margin-top:30px;">Enter Name:</h3>
+<input type="text" placeholder="Enter Your Name" size="25" style="width:250px; height:35px; border-radius: 10px; margin-top:-15px;">
+  <h3 style="margin-left:-130px; margin-top: 15px;">Enter Password:</h3>
+<input type="password" placeholder="Enter Password" id="password" size="25" style="width:250px; height:35px; border-radius: 10px; margin-top:-15px;">
+  <br>
+<button onclick="checkpassword()" type="button" style="width: 90px; height: 40px; margin-top: 20px; border-radius:10px; font-weight:bold; font-size: 18px;">Submit</button>&nbsp;
+<button type="reset" value="reset" style="width: 90px; height: 40px; margin-top: 20px; border-radius:10px; font-weight:bold; font-size: 18px; color: black;">Reset</button>
+</div>
+  </form>
+</center>
+  <script type="text/javascript">
+  function checkpassword(){
+ var password=document.getElementById("password").value;
+
+    if (password === "hk0422") {
+        window.location.href = "Greenkart.html";
+    } else {
+        alert("Wrong password!");
+    }
+  }
+  </script>
+</body>
+</html>
